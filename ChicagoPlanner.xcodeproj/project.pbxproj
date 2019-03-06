@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43410599222EF7D200BF7ED8 /* ChicagoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43410598222EF7D200BF7ED8 /* ChicagoDataSource.swift */; };
+		4341059B222EF86900BF7ED8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341059A222EF86900BF7ED8 /* Location.swift */; };
+		4341059D222EFA5400BF7ED8 /* ArtInstitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341059C222EFA5400BF7ED8 /* ArtInstitute.swift */; };
+		4341059F222EFAB400BF7ED8 /* CloudGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341059E222EFAB400BF7ED8 /* CloudGate.swift */; };
+		434105A1222EFADB00BF7ED8 /* MilleniumPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A0222EFADB00BF7ED8 /* MilleniumPark.swift */; };
+		434105A3222EFB0100BF7ED8 /* NavyPier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A2222EFB0100BF7ED8 /* NavyPier.swift */; };
+		434105A5222F473E00BF7ED8 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A4222F473E00BF7ED8 /* WeatherViewController.swift */; };
+		434105A7222F4B7000BF7ED8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A6222F4B7000BF7ED8 /* Weather.swift */; };
+		43456634222ED4A200275C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456633222ED4A200275C4A /* AppDelegate.swift */; };
+		4345663B222ED4A200275C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43456639222ED4A200275C4A /* Main.storyboard */; };
+		4345663D222ED4A400275C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4345663C222ED4A400275C4A /* Assets.xcassets */; };
+		43456640222ED4A400275C4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4345663E222ED4A400275C4A /* LaunchScreen.storyboard */; };
+		4345664B222ED4A500275C4A /* ChicagoPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345664A222ED4A500275C4A /* ChicagoPlannerTests.swift */; };
+		43456656222ED4A500275C4A /* ChicagoPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456655222ED4A500275C4A /* ChicagoPlannerUITests.swift */; };
+		4345666B222ED93D00275C4A /* PlannerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345666A222ED93D00275C4A /* PlannerTableViewController.swift */; };
+		4345666E222ED99500275C4A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345666D222ED99500275C4A /* TableViewCell.swift */; };
+		43456670222EDC7C00275C4A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345666F222EDC7C00275C4A /* TabBarController.swift */; };
+		43456672222EDD9400275C4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456671222EDD9400275C4A /* DetailViewController.swift */; };
+		43456676222EE26600275C4A /* HomeViewCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456675222EE26600275C4A /* HomeViewCollectionViewController.swift */; };
+		43456678222EE65800275C4A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456677222EE65800275C4A /* CollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43456647222ED4A500275C4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43456628222ED4A200275C4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4345662F222ED4A200275C4A;
+			remoteInfo = ChicagoPlanner;
+		};
+		43456652222ED4A500275C4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43456628222ED4A200275C4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4345662F222ED4A200275C4A;
+			remoteInfo = ChicagoPlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43410598222EF7D200BF7ED8 /* ChicagoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoDataSource.swift; sourceTree = "<group>"; };
+		4341059A222EF86900BF7ED8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4341059C222EFA5400BF7ED8 /* ArtInstitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtInstitute.swift; sourceTree = "<group>"; };
+		4341059E222EFAB400BF7ED8 /* CloudGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGate.swift; sourceTree = "<group>"; };
+		434105A0222EFADB00BF7ED8 /* MilleniumPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilleniumPark.swift; sourceTree = "<group>"; };
+		434105A2222EFB0100BF7ED8 /* NavyPier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavyPier.swift; sourceTree = "<group>"; };
+		434105A4222F473E00BF7ED8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		434105A6222F4B7000BF7ED8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		43456630222ED4A200275C4A /* ChicagoPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43456633222ED4A200275C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4345663A222ED4A200275C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4345663C222ED4A400275C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4345663F222ED4A400275C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43456641222ED4A400275C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43456646222ED4A500275C4A /* ChicagoPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4345664A222ED4A500275C4A /* ChicagoPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoPlannerTests.swift; sourceTree = "<group>"; };
+		4345664C222ED4A500275C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43456651222ED4A500275C4A /* ChicagoPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChicagoPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43456655222ED4A500275C4A /* ChicagoPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoPlannerUITests.swift; sourceTree = "<group>"; };
+		43456657222ED4A500275C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4345666A222ED93D00275C4A /* PlannerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerTableViewController.swift; sourceTree = "<group>"; };
+		4345666D222ED99500275C4A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4345666F222EDC7C00275C4A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		43456671222EDD9400275C4A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		43456675222EE26600275C4A /* HomeViewCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCollectionViewController.swift; sourceTree = "<group>"; };
+		43456677222EE65800275C4A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4345662D222ED4A200275C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43456643222ED4A500275C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345664E222ED4A500275C4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43410597222EF7B100BF7ED8 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				43410598222EF7D200BF7ED8 /* ChicagoDataSource.swift */,
+				4341059A222EF86900BF7ED8 /* Location.swift */,
+				4341059C222EFA5400BF7ED8 /* ArtInstitute.swift */,
+				4341059E222EFAB400BF7ED8 /* CloudGate.swift */,
+				434105A0222EFADB00BF7ED8 /* MilleniumPark.swift */,
+				434105A2222EFB0100BF7ED8 /* NavyPier.swift */,
+				434105A6222F4B7000BF7ED8 /* Weather.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		43456627222ED4A200275C4A = {
+			isa = PBXGroup;
+			children = (
+				43456632222ED4A200275C4A /* ChicagoPlanner */,
+				43456649222ED4A500275C4A /* ChicagoPlannerTests */,
+				43456654222ED4A500275C4A /* ChicagoPlannerUITests */,
+				43456631222ED4A200275C4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43456631222ED4A200275C4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43456630222ED4A200275C4A /* ChicagoPlanner.app */,
+				43456646222ED4A500275C4A /* ChicagoPlannerTests.xctest */,
+				43456651222ED4A500275C4A /* ChicagoPlannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43456632222ED4A200275C4A /* ChicagoPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				43410597222EF7B100BF7ED8 /* data */,
+				43456674222EE07200275C4A /* collectionFiles */,
+				43456673222EE05200275C4A /* tableFiles */,
+				43456663222ED62600275C4A /* controllers */,
+				43456633222ED4A200275C4A /* AppDelegate.swift */,
+				43456639222ED4A200275C4A /* Main.storyboard */,
+				4345663C222ED4A400275C4A /* Assets.xcassets */,
+				4345663E222ED4A400275C4A /* LaunchScreen.storyboard */,
+				43456641222ED4A400275C4A /* Info.plist */,
+			);
+			path = ChicagoPlanner;
+			sourceTree = "<group>";
+		};
+		43456649222ED4A500275C4A /* ChicagoPlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4345664A222ED4A500275C4A /* ChicagoPlannerTests.swift */,
+				4345664C222ED4A500275C4A /* Info.plist */,
+			);
+			path = ChicagoPlannerTests;
+			sourceTree = "<group>";
+		};
+		43456654222ED4A500275C4A /* ChicagoPlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43456655222ED4A500275C4A /* ChicagoPlannerUITests.swift */,
+				43456657222ED4A500275C4A /* Info.plist */,
+			);
+			path = ChicagoPlannerUITests;
+			sourceTree = "<group>";
+		};
+		43456663222ED62600275C4A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4345666F222EDC7C00275C4A /* TabBarController.swift */,
+				43456671222EDD9400275C4A /* DetailViewController.swift */,
+				434105A4222F473E00BF7ED8 /* WeatherViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		43456673222EE05200275C4A /* tableFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4345666D222ED99500275C4A /* TableViewCell.swift */,
+				4345666A222ED93D00275C4A /* PlannerTableViewController.swift */,
+			);
+			path = tableFiles;
+			sourceTree = "<group>";
+		};
+		43456674222EE07200275C4A /* collectionFiles */ = {
+			isa = PBXGroup;
+			children = (
+				43456675222EE26600275C4A /* HomeViewCollectionViewController.swift */,
+				43456677222EE65800275C4A /* CollectionViewCell.swift */,
+			);
+			path = collectionFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4345662F222ED4A200275C4A /* ChicagoPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4345665A222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlanner" */;
+			buildPhases = (
+				4345662C222ED4A200275C4A /* Sources */,
+				4345662D222ED4A200275C4A /* Frameworks */,
+				4345662E222ED4A200275C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChicagoPlanner;
+			productName = ChicagoPlanner;
+			productReference = 43456630222ED4A200275C4A /* ChicagoPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43456645222ED4A500275C4A /* ChicagoPlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4345665D222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlannerTests" */;
+			buildPhases = (
+				43456642222ED4A500275C4A /* Sources */,
+				43456643222ED4A500275C4A /* Frameworks */,
+				43456644222ED4A500275C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43456648222ED4A500275C4A /* PBXTargetDependency */,
+			);
+			name = ChicagoPlannerTests;
+			productName = ChicagoPlannerTests;
+			productReference = 43456646222ED4A500275C4A /* ChicagoPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43456650222ED4A500275C4A /* ChicagoPlannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43456660222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlannerUITests" */;
+			buildPhases = (
+				4345664D222ED4A500275C4A /* Sources */,
+				4345664E222ED4A500275C4A /* Frameworks */,
+				4345664F222ED4A500275C4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43456653222ED4A500275C4A /* PBXTargetDependency */,
+			);
+			name = ChicagoPlannerUITests;
+			productName = ChicagoPlannerUITests;
+			productReference = 43456651222ED4A500275C4A /* ChicagoPlannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43456628222ED4A200275C4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Julio Lama";
+				TargetAttributes = {
+					4345662F222ED4A200275C4A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					43456645222ED4A500275C4A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4345662F222ED4A200275C4A;
+					};
+					43456650222ED4A500275C4A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4345662F222ED4A200275C4A;
+					};
+				};
+			};
+			buildConfigurationList = 4345662B222ED4A200275C4A /* Build configuration list for PBXProject "ChicagoPlanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43456627222ED4A200275C4A;
+			productRefGroup = 43456631222ED4A200275C4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4345662F222ED4A200275C4A /* ChicagoPlanner */,
+				43456645222ED4A500275C4A /* ChicagoPlannerTests */,
+				43456650222ED4A500275C4A /* ChicagoPlannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4345662E222ED4A200275C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43456640222ED4A400275C4A /* LaunchScreen.storyboard in Resources */,
+				4345663D222ED4A400275C4A /* Assets.xcassets in Resources */,
+				4345663B222ED4A200275C4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43456644222ED4A500275C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345664F222ED4A500275C4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4345662C222ED4A200275C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4345666E222ED99500275C4A /* TableViewCell.swift in Sources */,
+				4345666B222ED93D00275C4A /* PlannerTableViewController.swift in Sources */,
+				4341059F222EFAB400BF7ED8 /* CloudGate.swift in Sources */,
+				4341059B222EF86900BF7ED8 /* Location.swift in Sources */,
+				434105A7222F4B7000BF7ED8 /* Weather.swift in Sources */,
+				43456678222EE65800275C4A /* CollectionViewCell.swift in Sources */,
+				43410599222EF7D200BF7ED8 /* ChicagoDataSource.swift in Sources */,
+				434105A1222EFADB00BF7ED8 /* MilleniumPark.swift in Sources */,
+				43456670222EDC7C00275C4A /* TabBarController.swift in Sources */,
+				434105A3222EFB0100BF7ED8 /* NavyPier.swift in Sources */,
+				43456676222EE26600275C4A /* HomeViewCollectionViewController.swift in Sources */,
+				4341059D222EFA5400BF7ED8 /* ArtInstitute.swift in Sources */,
+				434105A5222F473E00BF7ED8 /* WeatherViewController.swift in Sources */,
+				43456634222ED4A200275C4A /* AppDelegate.swift in Sources */,
+				43456672222EDD9400275C4A /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43456642222ED4A500275C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4345664B222ED4A500275C4A /* ChicagoPlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345664D222ED4A500275C4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43456656222ED4A500275C4A /* ChicagoPlannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43456648222ED4A500275C4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4345662F222ED4A200275C4A /* ChicagoPlanner */;
+			targetProxy = 43456647222ED4A500275C4A /* PBXContainerItemProxy */;
+		};
+		43456653222ED4A500275C4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4345662F222ED4A200275C4A /* ChicagoPlanner */;
+			targetProxy = 43456652222ED4A500275C4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43456639222ED4A200275C4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4345663A222ED4A200275C4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4345663E222ED4A400275C4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4345663F222ED4A400275C4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43456658222ED4A500275C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43456659222ED4A500275C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4345665B222ED4A500275C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECT5A8LP23;
+				INFOPLIST_FILE = ChicagoPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-503989.ChicagoPlanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4345665C222ED4A500275C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECT5A8LP23;
+				INFOPLIST_FILE = ChicagoPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-503989.ChicagoPlanner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4345665E222ED4A500275C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECT5A8LP23;
+				INFOPLIST_FILE = ChicagoPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-503989.ChicagoPlannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChicagoPlanner.app/ChicagoPlanner";
+			};
+			name = Debug;
+		};
+		4345665F222ED4A500275C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECT5A8LP23;
+				INFOPLIST_FILE = ChicagoPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-503989.ChicagoPlannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChicagoPlanner.app/ChicagoPlanner";
+			};
+			name = Release;
+		};
+		43456661222ED4A500275C4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECT5A8LP23;
+				INFOPLIST_FILE = ChicagoPlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-503989.ChicagoPlannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChicagoPlanner;
+			};
+			name = Debug;
+		};
+		43456662222ED4A500275C4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ECT5A8LP23;
+				INFOPLIST_FILE = ChicagoPlannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-503989.ChicagoPlannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChicagoPlanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4345662B222ED4A200275C4A /* Build configuration list for PBXProject "ChicagoPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43456658222ED4A500275C4A /* Debug */,
+				43456659222ED4A500275C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4345665A222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4345665B222ED4A500275C4A /* Debug */,
+				4345665C222ED4A500275C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4345665D222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4345665E222ED4A500275C4A /* Debug */,
+				4345665F222ED4A500275C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43456660222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43456661222ED4A500275C4A /* Debug */,
+				43456662222ED4A500275C4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43456628222ED4A200275C4A /* Project object */;
+}
