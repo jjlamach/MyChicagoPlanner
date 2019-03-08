@@ -24,6 +24,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
 
     /*
     // MARK: - Navigation
@@ -47,6 +48,13 @@ class DetailViewController: UIViewController {
     @IBAction func backButton(_ sender: UIBarButtonItem) {
         // dismisses the current view controller (DetailViewCtrl).
         dismiss(animated: true, completion: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tableViewIdentifier" {
+            print("Hiya!")
+        }
     }
     
     
@@ -63,9 +71,8 @@ class DetailViewController: UIViewController {
             }
         }
         else if wasAdded {
-            if let locationName = self.chicagoLocation.location.name {
-                self.alertUserWithMessage("\(locationName) was added to your planner.")
-            }
+            // show the recent added location on the table view.
+             performSegue(withIdentifier: "tableViewIdentifier", sender: self)
         }
     }
     

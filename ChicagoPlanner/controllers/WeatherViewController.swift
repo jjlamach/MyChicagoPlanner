@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class WeatherViewController: UIViewController {
     
@@ -31,48 +33,34 @@ class WeatherViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
     /**
      Makes a HTTP request to the endpoint: https://api.openweathermap.org/data/2.5/weather?q=chicago&APPID=0ecc43f46e0c3894a92312a6f3043377
      to obtain the current weather in Chicago.
      */
     func getChicagoWeather() -> Void {
-        let configuration = URLSessionConfiguration.default
-        let session = URLSession(configuration: configuration)
-        
-        let url:URL = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=chicago&APPID=0ecc43f46e0c3894a92312a6f3043377")!
-        
-        let task = session.dataTask(with: url){
-            (data, response, error) in
-            // verify if there is any HTTP errors.
-            guard error == nil else {
-                print("Error getting Chicago weather.")
+        let url: String = "https://api.openweathermap.org/data/2.5/weather?q=chicago&APPID=0ecc43f46e0c3894a92312a6f3043377"
+        AF.request(url).responseJSON {
+            response in
+            guard response.result.error == nil else {
+                print("Error with url.")
                 return
             }
-            // verify if we actually get data
-            guard let weatherData = data else {
-                print("Weather data is empty")
+            guard let JSONResponse = response.result.value as? [String: Any] else {
+                print("Did not get JSON response")
                 return
             }
-            do {
-                
-                let weather = try? JSONDecoder().decode(Weather.self, from: weatherData)
-                if let weatherElement = weather {
-                    self.pressure = weatherElement.main.pressure
-                    self.humidity = weatherElement.main.humidity
-                    self.windSpeed = weatherElement.wind.speed
-                    for weather in weatherElement.weather {
-                        self.currentWeather = weather.description
-                    }
-                }
-                
-            }
-            
+            let swiftifyJSON = JSON(JSONResponse)
+            self.windSpeed = swiftifyJSON["wind"]["speed"].doubleValue
+            self.pressure = swiftifyJSON["main"]["pressure"].intValue
+            self.currentWeather = swiftifyJSON["weather"][0]["description"].stringValue
+            self.humidity = swiftifyJSON["main"]["humidity"].intValue
         }
-        // execute http request.
-        task.resume()
     }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
-        self.getChicagoWeather()
         self.weatherLabel.text = self.currentWeather
         self.humidityLabel.text = String(self.humidity) + "%"
         self.pressureLabel.text = String(self.pressure)

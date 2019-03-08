@@ -12,20 +12,32 @@ private let reuseIdentifier = "locationCell"
 
 class HomeViewCollectionViewController: UICollectionViewController {
     
+    // to fill the collection cells.
     var imageFiles: [UIImage] = []
     var imageNames: [(String, String)] = []
     var locationNames: [String] = []
     
-    
+    // to identify which Chicago location is.
     var chicagoLocation: Chicago?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // retrieve weather data when the app starts.
+        if let tabBarCtrl = self.tabBarController {
+            let weatherViewCtrl = tabBarCtrl.children[2] as! WeatherViewController
+            weatherViewCtrl.getChicagoWeather()
+        }
         // Do any additional setup after loading the view.
         self.initializeCellImages()
     }
     
-    func initializeCellImages() -> Void {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let tableViewCtrl = self.tabBarController?.children[1] as! PlannerTableViewController
+        tableViewCtrl.tableView.reloadData()
+    }
+    
+    private func initializeCellImages() -> Void {
         self.imageNames = [
             ("cloud-gate.jpg", "Cloud Gate"),
             ("mill-park.jpg", "Millenium Park"),
@@ -78,6 +90,7 @@ class HomeViewCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let target = segue.destination as? DetailViewController {

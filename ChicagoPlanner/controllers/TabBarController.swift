@@ -10,8 +10,6 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    var tabBarControllerHello: String = ""
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +33,4 @@ class TabBarController: UITabBarController {
             tableViewCtrl.tableView.reloadData()
         }
     }
-    
-
 }

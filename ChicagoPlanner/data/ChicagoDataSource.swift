@@ -23,8 +23,13 @@ final class ChicagoDataSource {
         }
     }
     
-    func removeLocation(_ location: Chicago) -> Void {
-        
+    func removeLocation(_ locationName: String) -> Void {
+        for (index, currLocation) in ChicagoDataSource.selectedLocations.enumerated() {
+            if currLocation.location.name == locationName {
+                ChicagoDataSource.selectedLocations.remove(at: index)
+                return
+            }
+        }
     }
     
     private func search(_ locationName: String) -> Bool {

@@ -20,6 +20,7 @@ class PlannerTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setUpNames()
+        self.tableView.reloadData()
     }
     
     private func setUpNames() -> Void {
@@ -29,11 +30,6 @@ class PlannerTableViewController: UITableViewController {
             self.locNames.insert(currName, at: 0)
         }
     }
-    
-    
-    
-    
-    
     
     
 
@@ -75,13 +71,29 @@ class PlannerTableViewController: UITableViewController {
 
     
     // Override to support editing the table view.
-    /*
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            let selectedCell = self.tableView.cellForRow(at: indexPath) as! TableViewCell
+            ChicagoDataSource.instance.removeLocation(selectedCell.locationName.text!)
+            self.locationNames.remove(at: indexPath.row)
+            self.locNames.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.locationWasDeletedAlert(selectedCell.locationName.text!)
         }
     }
- */
+    
+    private func locationWasDeletedAlert(_ locationName: String) -> Void {
+        let message: String = "Location \(locationName) was deleted from your planner."
+        let title: String = "Chicago Planner"
+        let alertCtrl = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let okayAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        alertCtrl.addAction(okayAction)
+        present(alertCtrl, animated: true, completion: nil)
+    }
+    
+ 
  
 
     /*
@@ -108,5 +120,10 @@ class PlannerTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    // dismiss the current view controller (self) to the previous controller view.
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

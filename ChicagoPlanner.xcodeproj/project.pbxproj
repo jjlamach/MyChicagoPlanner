@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045324934C35DE4C5BE5593C /* Pods_ChicagoPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8655C2EC377FA46CA3395689 /* Pods_ChicagoPlannerTests.framework */; };
 		43410599222EF7D200BF7ED8 /* ChicagoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43410598222EF7D200BF7ED8 /* ChicagoDataSource.swift */; };
 		4341059B222EF86900BF7ED8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341059A222EF86900BF7ED8 /* Location.swift */; };
 		4341059D222EFA5400BF7ED8 /* ArtInstitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341059C222EFA5400BF7ED8 /* ArtInstitute.swift */; };
@@ -27,6 +28,8 @@
 		43456672222EDD9400275C4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456671222EDD9400275C4A /* DetailViewController.swift */; };
 		43456676222EE26600275C4A /* HomeViewCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456675222EE26600275C4A /* HomeViewCollectionViewController.swift */; };
 		43456678222EE65800275C4A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456677222EE65800275C4A /* CollectionViewCell.swift */; };
+		AC0ACEBFF7202375B4089CE4 /* Pods_ChicagoPlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C21D0DB3594B1EC178CD7DE /* Pods_ChicagoPlannerUITests.framework */; };
+		E7467A11E2D17307A5B42FFC /* Pods_ChicagoPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF16D2F50B2A03D9C9B236D /* Pods_ChicagoPlanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		318E72E3E579337EB2394874 /* Pods-ChicagoPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChicagoPlannerTests/Pods-ChicagoPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3882418BE0016307E0C88B28 /* Pods-ChicagoPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlanner.release.xcconfig"; path = "Target Support Files/Pods-ChicagoPlanner/Pods-ChicagoPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		43410598222EF7D200BF7ED8 /* ChicagoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoDataSource.swift; sourceTree = "<group>"; };
 		4341059A222EF86900BF7ED8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4341059C222EFA5400BF7ED8 /* ArtInstitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtInstitute.swift; sourceTree = "<group>"; };
@@ -73,6 +78,13 @@
 		43456671222EDD9400275C4A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		43456675222EE26600275C4A /* HomeViewCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCollectionViewController.swift; sourceTree = "<group>"; };
 		43456677222EE65800275C4A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8304F194AE56DBAD79C13CAB /* Pods-ChicagoPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-ChicagoPlannerUITests/Pods-ChicagoPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8655C2EC377FA46CA3395689 /* Pods_ChicagoPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChicagoPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A738DAC553E8639BFC240C1 /* Pods-ChicagoPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChicagoPlannerUITests/Pods-ChicagoPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C21D0DB3594B1EC178CD7DE /* Pods_ChicagoPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChicagoPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF16D2F50B2A03D9C9B236D /* Pods_ChicagoPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChicagoPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A810F1AE4FDE64F74E3A1F /* Pods-ChicagoPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlannerTests.release.xcconfig"; path = "Target Support Files/Pods-ChicagoPlannerTests/Pods-ChicagoPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC5B6DA04ACC5B7015633A2A /* Pods-ChicagoPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlanner.debug.xcconfig"; path = "Target Support Files/Pods-ChicagoPlanner/Pods-ChicagoPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7467A11E2D17307A5B42FFC /* Pods_ChicagoPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045324934C35DE4C5BE5593C /* Pods_ChicagoPlannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0ACEBFF7202375B4089CE4 /* Pods_ChicagoPlannerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +136,8 @@
 				43456649222ED4A500275C4A /* ChicagoPlannerTests */,
 				43456654222ED4A500275C4A /* ChicagoPlannerUITests */,
 				43456631222ED4A200275C4A /* Products */,
+				D70050918786822AE2C585C7 /* Pods */,
+				CBBE0027327B07F698BBDF3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +213,30 @@
 			path = collectionFiles;
 			sourceTree = "<group>";
 		};
+		CBBE0027327B07F698BBDF3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CF16D2F50B2A03D9C9B236D /* Pods_ChicagoPlanner.framework */,
+				8655C2EC377FA46CA3395689 /* Pods_ChicagoPlannerTests.framework */,
+				8C21D0DB3594B1EC178CD7DE /* Pods_ChicagoPlannerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D70050918786822AE2C585C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC5B6DA04ACC5B7015633A2A /* Pods-ChicagoPlanner.debug.xcconfig */,
+				3882418BE0016307E0C88B28 /* Pods-ChicagoPlanner.release.xcconfig */,
+				318E72E3E579337EB2394874 /* Pods-ChicagoPlannerTests.debug.xcconfig */,
+				B9A810F1AE4FDE64F74E3A1F /* Pods-ChicagoPlannerTests.release.xcconfig */,
+				8A738DAC553E8639BFC240C1 /* Pods-ChicagoPlannerUITests.debug.xcconfig */,
+				8304F194AE56DBAD79C13CAB /* Pods-ChicagoPlannerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4345665A222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlanner" */;
 			buildPhases = (
+				EE6E868AF05BC38A4FCAEA6F /* [CP] Check Pods Manifest.lock */,
 				4345662C222ED4A200275C4A /* Sources */,
 				4345662D222ED4A200275C4A /* Frameworks */,
 				4345662E222ED4A200275C4A /* Resources */,
+				21BA91E78C19210F248807CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4345665D222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlannerTests" */;
 			buildPhases = (
+				C567292752C444A8C42F9100 /* [CP] Check Pods Manifest.lock */,
 				43456642222ED4A500275C4A /* Sources */,
 				43456643222ED4A500275C4A /* Frameworks */,
 				43456644222ED4A500275C4A /* Resources */,
@@ -238,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43456660222ED4A500275C4A /* Build configuration list for PBXNativeTarget "ChicagoPlannerUITests" */;
 			buildPhases = (
+				A3CED1A810052857F3D9A673 /* [CP] Check Pods Manifest.lock */,
 				4345664D222ED4A500275C4A /* Sources */,
 				4345664E222ED4A500275C4A /* Frameworks */,
 				4345664F222ED4A500275C4A /* Resources */,
@@ -321,6 +366,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21BA91E78C19210F248807CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChicagoPlanner/Pods-ChicagoPlanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChicagoPlanner/Pods-ChicagoPlanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChicagoPlanner/Pods-ChicagoPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3CED1A810052857F3D9A673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChicagoPlannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C567292752C444A8C42F9100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChicagoPlannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6E868AF05BC38A4FCAEA6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChicagoPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4345662C222ED4A200275C4A /* Sources */ = {
@@ -514,6 +645,7 @@
 		};
 		4345665B222ED4A500275C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5B6DA04ACC5B7015633A2A /* Pods-ChicagoPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +664,7 @@
 		};
 		4345665C222ED4A500275C4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3882418BE0016307E0C88B28 /* Pods-ChicagoPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +683,7 @@
 		};
 		4345665E222ED4A500275C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318E72E3E579337EB2394874 /* Pods-ChicagoPlannerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -571,6 +705,7 @@
 		};
 		4345665F222ED4A500275C4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A810F1AE4FDE64F74E3A1F /* Pods-ChicagoPlannerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +727,7 @@
 		};
 		43456661222ED4A500275C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A738DAC553E8639BFC240C1 /* Pods-ChicagoPlannerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +748,7 @@
 		};
 		43456662222ED4A500275C4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8304F194AE56DBAD79C13CAB /* Pods-ChicagoPlannerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
