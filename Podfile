@@ -6,8 +6,10 @@ target 'ChicagoPlanner' do
   use_frameworks!
 
   # Pods for ChicagoPlanner
-  pod 'Alamofire', '~> 5.0.0-beta.3'
+  pod 'Alamofire', '~> 4.7'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'CDYelpFusionKit', '1.5.1'
+  pod 'AlamofireImage', '~> 3.5'
 
   target 'ChicagoPlannerTests' do
     inherit! :search_paths

@@ -41,14 +41,14 @@ class WeatherViewController: UIViewController {
      */
     func getChicagoWeather() -> Void {
         let url: String = "https://api.openweathermap.org/data/2.5/weather?q=chicago&APPID=0ecc43f46e0c3894a92312a6f3043377"
-        AF.request(url).responseJSON {
+        Alamofire.request(url).responseJSON {
             response in
             guard response.result.error == nil else {
                 print("Error with url.")
                 return
             }
             guard let JSONResponse = response.result.value as? [String: Any] else {
-                print("Did not get JSON response")
+                print("Could not get JSON response.")
                 return
             }
             let swiftifyJSON = JSON(JSONResponse)

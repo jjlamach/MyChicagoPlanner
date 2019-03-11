@@ -10,9 +10,14 @@ import Foundation
 
 final class ChicagoDataSource {
     static let instance = ChicagoDataSource()
+    
     static var selectedLocations: [Chicago] = []
+    
     private init() {}
     
+    /**
+     Add a Chicago location to the data source array.
+    */
     func addLocation(_ location: Chicago) -> Bool {
         if search(location.location.name!) {
             return false
@@ -22,7 +27,9 @@ final class ChicagoDataSource {
             return true
         }
     }
-    
+    /**
+     Removes a location from the data source array.
+    */
     func removeLocation(_ locationName: String) -> Void {
         for (index, currLocation) in ChicagoDataSource.selectedLocations.enumerated() {
             if currLocation.location.name == locationName {
@@ -31,7 +38,9 @@ final class ChicagoDataSource {
             }
         }
     }
-    
+    /**
+     Searches for a location from the data source array.
+    */
     private func search(_ locationName: String) -> Bool {
         for location in ChicagoDataSource.selectedLocations {
             let currentLocation = location.location.name!
@@ -42,26 +51,23 @@ final class ChicagoDataSource {
         return false
     }
     
+    /**
+     Returns the size of the data source array.
+    */
     func dataSourceSize() -> Int {
         return ChicagoDataSource.selectedLocations.count
     }
     
+    /**
+     Returns the data source array.
+    */
     func getDatSource() -> [Chicago] {
         return ChicagoDataSource.selectedLocations
     }
     
+    /**
+    */
     func printDatSource() -> Void {
         print(self.getDatSource())
-    }
-    
-    func locationsAsString() -> [String] {
-        var result:[String] = []
-        for location in ChicagoDataSource.selectedLocations {
-            let name = location.location.name!
-            if !result.contains(name) {
-                result.append(name)
-            }
-        }
-        return result
     }
 }

@@ -14,6 +14,7 @@ struct Location {
     var image: UIImage?
     var description: UITextView?
 }
+
 class Chicago {
     var location: Location
     

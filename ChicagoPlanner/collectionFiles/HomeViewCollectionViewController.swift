@@ -26,7 +26,15 @@ class HomeViewCollectionViewController: UICollectionViewController {
         if let tabBarCtrl = self.tabBarController {
             let weatherViewCtrl = tabBarCtrl.children[2] as! WeatherViewController
             weatherViewCtrl.getChicagoWeather()
+            
+            // load the locations only once?
+            // first the navigation ctrl -> then its controllers.
+            // a navigation controller is a stack of controllers.
+            let navigationCtrl = tabBarCtrl.children[3] as! UINavigationController
+            let restaurantCtrl = navigationCtrl.topViewController as? RestaurantsTableViewController
+            restaurantCtrl?.fetchChicagoRestaurants()
         }
+        
         // Do any additional setup after loading the view.
         self.initializeCellImages()
     }

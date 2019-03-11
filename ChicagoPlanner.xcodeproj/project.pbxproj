@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		045324934C35DE4C5BE5593C /* Pods_ChicagoPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8655C2EC377FA46CA3395689 /* Pods_ChicagoPlannerTests.framework */; };
+		433F4AB12236D52800F0C19C /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433F4AB02236D52800F0C19C /* RestaurantsTableViewController.swift */; };
+		433F4AB32236D5E900F0C19C /* RestaurantCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433F4AB22236D5E900F0C19C /* RestaurantCellView.swift */; };
+		433F4AB52236D7BA00F0C19C /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433F4AB42236D7BA00F0C19C /* RestaurantDetailViewController.swift */; };
 		43410599222EF7D200BF7ED8 /* ChicagoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43410598222EF7D200BF7ED8 /* ChicagoDataSource.swift */; };
 		4341059B222EF86900BF7ED8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341059A222EF86900BF7ED8 /* Location.swift */; };
 		4341059D222EFA5400BF7ED8 /* ArtInstitute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4341059C222EFA5400BF7ED8 /* ArtInstitute.swift */; };
@@ -15,7 +18,6 @@
 		434105A1222EFADB00BF7ED8 /* MilleniumPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A0222EFADB00BF7ED8 /* MilleniumPark.swift */; };
 		434105A3222EFB0100BF7ED8 /* NavyPier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A2222EFB0100BF7ED8 /* NavyPier.swift */; };
 		434105A5222F473E00BF7ED8 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A4222F473E00BF7ED8 /* WeatherViewController.swift */; };
-		434105A7222F4B7000BF7ED8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434105A6222F4B7000BF7ED8 /* Weather.swift */; };
 		43456634222ED4A200275C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43456633222ED4A200275C4A /* AppDelegate.swift */; };
 		4345663B222ED4A200275C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43456639222ED4A200275C4A /* Main.storyboard */; };
 		4345663D222ED4A400275C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4345663C222ED4A400275C4A /* Assets.xcassets */; };
@@ -52,6 +54,9 @@
 /* Begin PBXFileReference section */
 		318E72E3E579337EB2394874 /* Pods-ChicagoPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChicagoPlannerTests/Pods-ChicagoPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3882418BE0016307E0C88B28 /* Pods-ChicagoPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChicagoPlanner.release.xcconfig"; path = "Target Support Files/Pods-ChicagoPlanner/Pods-ChicagoPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		433F4AB02236D52800F0C19C /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		433F4AB22236D5E900F0C19C /* RestaurantCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellView.swift; sourceTree = "<group>"; };
+		433F4AB42236D7BA00F0C19C /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		43410598222EF7D200BF7ED8 /* ChicagoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoDataSource.swift; sourceTree = "<group>"; };
 		4341059A222EF86900BF7ED8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4341059C222EFA5400BF7ED8 /* ArtInstitute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtInstitute.swift; sourceTree = "<group>"; };
@@ -59,7 +64,6 @@
 		434105A0222EFADB00BF7ED8 /* MilleniumPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilleniumPark.swift; sourceTree = "<group>"; };
 		434105A2222EFB0100BF7ED8 /* NavyPier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavyPier.swift; sourceTree = "<group>"; };
 		434105A4222F473E00BF7ED8 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		434105A6222F4B7000BF7ED8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		43456630222ED4A200275C4A /* ChicagoPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChicagoPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43456633222ED4A200275C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4345663A222ED4A200275C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,7 +128,6 @@
 				4341059E222EFAB400BF7ED8 /* CloudGate.swift */,
 				434105A0222EFADB00BF7ED8 /* MilleniumPark.swift */,
 				434105A2222EFB0100BF7ED8 /* NavyPier.swift */,
-				434105A6222F4B7000BF7ED8 /* Weather.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				4345666F222EDC7C00275C4A /* TabBarController.swift */,
 				43456671222EDD9400275C4A /* DetailViewController.swift */,
 				434105A4222F473E00BF7ED8 /* WeatherViewController.swift */,
+				433F4AB42236D7BA00F0C19C /* RestaurantDetailViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -200,6 +204,8 @@
 			children = (
 				4345666D222ED99500275C4A /* TableViewCell.swift */,
 				4345666A222ED93D00275C4A /* PlannerTableViewController.swift */,
+				433F4AB02236D52800F0C19C /* RestaurantsTableViewController.swift */,
+				433F4AB22236D5E900F0C19C /* RestaurantCellView.swift */,
 			);
 			path = tableFiles;
 			sourceTree = "<group>";
@@ -233,7 +239,6 @@
 				8A738DAC553E8639BFC240C1 /* Pods-ChicagoPlannerUITests.debug.xcconfig */,
 				8304F194AE56DBAD79C13CAB /* Pods-ChicagoPlannerUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -459,12 +464,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4345666E222ED99500275C4A /* TableViewCell.swift in Sources */,
+				433F4AB52236D7BA00F0C19C /* RestaurantDetailViewController.swift in Sources */,
 				4345666B222ED93D00275C4A /* PlannerTableViewController.swift in Sources */,
 				4341059F222EFAB400BF7ED8 /* CloudGate.swift in Sources */,
 				4341059B222EF86900BF7ED8 /* Location.swift in Sources */,
-				434105A7222F4B7000BF7ED8 /* Weather.swift in Sources */,
 				43456678222EE65800275C4A /* CollectionViewCell.swift in Sources */,
+				433F4AB12236D52800F0C19C /* RestaurantsTableViewController.swift in Sources */,
 				43410599222EF7D200BF7ED8 /* ChicagoDataSource.swift in Sources */,
+				433F4AB32236D5E900F0C19C /* RestaurantCellView.swift in Sources */,
 				434105A1222EFADB00BF7ED8 /* MilleniumPark.swift in Sources */,
 				43456670222EDC7C00275C4A /* TabBarController.swift in Sources */,
 				434105A3222EFB0100BF7ED8 /* NavyPier.swift in Sources */,

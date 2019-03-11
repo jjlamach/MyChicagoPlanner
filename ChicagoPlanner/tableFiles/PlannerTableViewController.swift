@@ -20,8 +20,10 @@ class PlannerTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setUpNames()
-        self.tableView.reloadData()
+        self.tableView.reloadData()        
     }
+    
+    
     
     private func setUpNames() -> Void {
         self.locationNames = ChicagoDataSource.instance.getDatSource()

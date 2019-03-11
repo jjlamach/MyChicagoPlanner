@@ -24,18 +24,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
+        
     override func viewWillAppear(_ animated: Bool) {
         if let chicago_location = self.chicagoLocation {
             self.locationName.text = chicago_location.location.name
@@ -52,15 +41,13 @@ class DetailViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "tableViewIdentifier" {
-            print("Hiya!")
-        }
+        // sends the user to the TableView.
     }
     
     
     
     /**
-      Adds the current location to the datasource.
+      Adds the current selected location to the datasource.
     */
     @IBAction func addToPlanner(_ sender: UIButton) {
         let wasAdded = ChicagoDataSource.instance.addLocation(self.chicagoLocation)
@@ -71,14 +58,13 @@ class DetailViewController: UIViewController {
             }
         }
         else if wasAdded {
-            // show the recent added location on the table view.
-             performSegue(withIdentifier: "tableViewIdentifier", sender: self)
+            self.alertUserWithMessage("\(self.chicagoLocation.location.name!) was added to your planner.")
         }
     }
     
     
     /**
-        Alers the user with a message.
+        Alerts the user with a message.
     */
     private func alertUserWithMessage(_ message: String) {
         let alertCtrl = UIAlertController(title: "Chicago Planner", message: message, preferredStyle: .alert)
