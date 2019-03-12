@@ -30,47 +30,59 @@ class RestaurantsTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        self.fetchChicagoRestaurants()
+        super.viewWillAppear(animated)
     }
     
-    func fetchChicagoRestaurants() {
+    func retrieveImages() {
         self.yelpApiClient.searchBusinesses(byTerm: "Food", location: "Chicago", latitude: nil, longitude: nil, radius: nil, categories: nil, locale: CDYelpLocale.english_unitedStates, limit: 10, offset: nil, sortBy: CDYelpBusinessSortType.rating, priceTiers: nil, openNow: nil, openAt: nil, attributes: nil) {
             (response) in
             if let dataResponse = response?.businesses {
-                var index:Int = 0
-                while index < dataResponse.count {
-                    if let businessImageUrl = dataResponse[index].imageUrl {
+                for business in dataResponse {
+                    // edit the image to fit on the cells. then add them to the array.
+                    if let businessImageUrl = business.imageUrl {
                         Alamofire.request(businessImageUrl).responseImage {
                             response in
                             let sizeForEditedImage = CGSize(width: 100.0, height: 100.0)
                             var editedImage = response.result.value?.af_imageScaled(to: sizeForEditedImage)
                             editedImage = response.result.value?.af_imageAspectScaled(toFit: sizeForEditedImage)
                             editedImage = response.result.value?.af_imageAspectScaled(toFill: sizeForEditedImage)
-                            self.restaurantImages.append(editedImage!)
+                            if let image = editedImage {
+                                self.restaurantImages.append(image)
+                            }
                         }
                     }
-                    index += 1
                 }
+            }
+        }
+    }
+    
+    func fetchChicagoRestaurants() {
+        self.yelpApiClient.searchBusinesses(byTerm: "Food", location: "Chicago", latitude: nil, longitude: nil, radius: nil, categories: nil, locale: CDYelpLocale.english_unitedStates, limit: 10, offset: nil, sortBy: CDYelpBusinessSortType.rating, priceTiers: nil, openNow: nil, openAt: nil, attributes: nil) {
+            (response) in
+            if let dataResponse = response?.businesses {
                 for business in dataResponse {
-//                    print("\(business.name), \(business.rating), \(business.location?.city)")
-                    if let businessName = business.name {
-                        self.restaurantNames.append(businessName)
-                    }
-                    if let location = business.location {
-                        if let address = location.addressOne {
-                            self.restaurantAddresses.append(address)
-                        }
-                    }
-                    if let phoneNumber = business.phone {
-                        self.restaurantPhones.append(phoneNumber)
-                    }
-                    if let restaurantRating = business.rating {
-                        self.restaurantRatings.append(restaurantRating)
-                    }
-                    
-                    if let businessAddress = business.location?.addressOne {
-                        self.restaurantAddresses.append(businessAddress)
-                    }
+                    self.restaurantNames.append(business.name!)
+                    self.restaurantAddresses.append((business.location?.addressOne!)!)
+                    self.restaurantPhones.append(business.phone!)
+                    self.restaurantRatings.append(business.rating!)
+//                    if let businessName = business.name {
+//                        self.restaurantNames.append(businessName)
+//                    }
+//                    if let location = business.location {
+//                        if let address = location.addressOne {
+//                            self.restaurantAddresses.append(address)
+//                        }
+//                    }
+//                    if let phoneNumber = business.phone {
+//                        self.restaurantPhones.append(phoneNumber)
+//                    }
+//                    if let restaurantRating = business.rating {
+//                        self.restaurantRatings.append(restaurantRating)
+//                    }
+//
+//                    if let businessAddress = business.location?.addressOne {
+//                        self.restaurantAddresses.append(businessAddress)
+//                    }
                 }
             }
         }

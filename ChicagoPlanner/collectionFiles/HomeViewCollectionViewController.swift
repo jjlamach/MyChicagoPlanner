@@ -22,16 +22,17 @@ class HomeViewCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // retrieve weather data when the app starts.
+        /* retrieve weather data when the app starts.*/
         if let tabBarCtrl = self.tabBarController {
             let weatherViewCtrl = tabBarCtrl.children[2] as! WeatherViewController
             weatherViewCtrl.getChicagoWeather()
             
-            // load the locations only once?
-            // first the navigation ctrl -> then its controllers.
-            // a navigation controller is a stack of controllers.
+            /* Load the Yelp locations when the app loads. */
+            /* first the navigation ctrl -> then its controllers. */
+            /* a navigation controller is a stack of controllers. */
             let navigationCtrl = tabBarCtrl.children[3] as! UINavigationController
             let restaurantCtrl = navigationCtrl.topViewController as? RestaurantsTableViewController
+            restaurantCtrl?.retrieveImages()
             restaurantCtrl?.fetchChicagoRestaurants()
         }
         
@@ -41,6 +42,7 @@ class HomeViewCollectionViewController: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // reload the tableView each time we visit the HomeView.
         let tableViewCtrl = self.tabBarController?.children[1] as! PlannerTableViewController
         tableViewCtrl.tableView.reloadData()
     }
